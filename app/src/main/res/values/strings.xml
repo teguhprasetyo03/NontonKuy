@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">NontonKuy</string>
+    <string name="lewati_perkenalan">LEWATI PERKENALAN</string>
+    <string name="lanjutkan">LANJUTKAN</string>
+    <string name="memulai">MEMULAI</string>
+    <string name="upload_nanti">UPLOAD NANTI</string>
+    <string name="simpan_dan_lanjutkan">SIMPAN DAN LANJUTKAN</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="now_playing_desc">Lebih mudah untuk mengetahui \n
+film yang sedang tampil</string>
+    <string name="pre_sale">PRE SALE</string>
+    <string name="pre_sale_desc">Tidak khawatir ketinggalan \n
+update film baru</string>
+    <string name="cashless">CASHLESS</string>
+    <string name="cashless_desc">Gunakan e-wallet untuk \n
+transaksi tiket nonton</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="masuk_akun">MASUK AKUN</string>
+    <string name="daftar_akun_baru">DAFTAR AKUN BARU</string>
+    <string name="nama">Nama</string>
+    <string name="email">Email</string>
+    <string name="photo">Photo</string>
+    <string name="photo_desc">Welcome, \nTeguh Prasetyo</string>
+
+
+</resources>
