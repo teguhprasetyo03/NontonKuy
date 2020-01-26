@@ -141,7 +141,7 @@
 
         <ImageView
             android:src="@drawable/ic_profil"
-            android:layout_width="mat"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             />
