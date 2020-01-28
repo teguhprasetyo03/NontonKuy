@@ -1,7 +1,8 @@
-package com.studiomasteguh.nontonkuy
+package com.studiomasteguh.nontonkuy.signin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.studiomasteguh.nontonkuy.R
 
 class SignUpPhotoActivity : AppCompatActivity() {
 
