@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".CheckoutFailedActivity"></activity>
+        <activity android:name=".CheckoutActivity" />
         <activity android:name=".PilihBangkuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +26,7 @@
         <activity android:name=".onboarding.OnBoardingThree" />
         <activity android:name=".onboarding.OnBoardingTwoActivity" />
         <activity android:name=".onboarding.OnBoardingOneActivity" />
-        <activity android:name=".SplashScreenActivity">
-
-        </activity>
+        <activity android:name=".SplashScreenActivity" />
     </application>
 
 </manifest>
