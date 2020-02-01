@@ -20,7 +20,7 @@
         <activity android:name=".signin.SignUpActivity" />
         <activity android:name=".signin.SignUpPhotoActivity" />
         <activity android:name=".signin.SignInActivity" />
-        <activity android:name=".onboarding.OnBoardingThree" />
+        <activity android:name=".onboarding.OnBoardingThreeActivity" />
         <activity android:name=".onboarding.OnBoardingTwoActivity" />
         <activity android:name=".onboarding.OnBoardingOneActivity" />
         <activity android:name=".SplashScreenActivity" >

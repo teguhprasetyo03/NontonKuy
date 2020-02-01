@@ -9,7 +9,7 @@
 
     <Button
         android:textSize="16sp"
-        android:id="@+id/button"
+        android:id="@+id/btn_daftar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -23,7 +23,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_home"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -31,10 +31,11 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/btn_primary"
         android:text="@string/lanjutkan"
-        android:textSize="16sp"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_daftar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
