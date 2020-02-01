@@ -9,15 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CheckoutFailedActivity"></activity>
+        <activity android:name=".HistoryActivity"></activity>
+        <activity android:name=".MyWalletActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".CheckoutFailedActivity" />
         <activity android:name=".CheckoutActivity" />
-        <activity android:name=".PilihBangkuActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".PilihBangkuActivity"></activity>
         <activity android:name=".DetailMovieActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".signin.SignUpActivity" />
@@ -26,7 +23,13 @@
         <activity android:name=".onboarding.OnBoardingThree" />
         <activity android:name=".onboarding.OnBoardingTwoActivity" />
         <activity android:name=".onboarding.OnBoardingOneActivity" />
-        <activity android:name=".SplashScreenActivity" />
+        <activity android:name=".SplashScreenActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
