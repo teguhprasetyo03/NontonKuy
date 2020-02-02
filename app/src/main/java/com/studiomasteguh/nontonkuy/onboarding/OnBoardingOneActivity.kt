@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.studiomasteguh.nontonkuy.R
-import com.studiomasteguh.nontonkuy.signin.SignInActivity
+import com.studiomasteguh.nontonkuy.signin.signin.SignInActivity
 import kotlinx.android.synthetic.main.activity_on_boarding_one.*
 
 class OnBoardingOneActivity : AppCompatActivity() {
