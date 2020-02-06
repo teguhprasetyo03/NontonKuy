@@ -26,7 +26,7 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
-        mDatabase = FirebaseDatabase.getInstance().getReference("user")
+        mDatabase = FirebaseDatabase.getInstance().getReference("User")
 
         preferences = Preferences(this)
 
@@ -77,7 +77,6 @@ class SignInActivity : AppCompatActivity() {
                         preferences.setValues("email", user.email.toString())
                         preferences.setValues("saldo", user.saldo.toString())
                         preferences.setValues("status", "1")
-
 
                         finishAffinity()
 

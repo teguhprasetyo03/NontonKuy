@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "99517846702-jtt0865jqurlg5mn1pi5ipep3rgdquu3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.studiomasteguh.nontonkuy",
+            "certificate_hash": "5d5fbdb36b87dd97cc106e83fc191bc752f38234"
+          }
+        },
+        {
           "client_id": "99517846702-tbkpet1or0tr4ki9ucfie6tc1otouh8f.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
