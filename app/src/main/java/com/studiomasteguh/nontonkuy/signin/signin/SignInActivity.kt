@@ -4,12 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-import android.util.Log
 import android.widget.Toast
 import com.google.firebase.database.*
-import com.studiomasteguh.nontonkuy.HomeActivity
+import com.studiomasteguh.nontonkuy.home.HomeActivity
 import com.studiomasteguh.nontonkuy.R
-import com.studiomasteguh.nontonkuy.signin.SignUpActivity
+import com.studiomasteguh.nontonkuy.signin.signup.SignUpActivity
 import com.studiomasteguh.nontonkuy.utils.Preferences
 import kotlinx.android.synthetic.main.activity_sign_in.*
 

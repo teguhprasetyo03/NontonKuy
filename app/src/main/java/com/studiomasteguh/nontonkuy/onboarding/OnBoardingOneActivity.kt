@@ -3,7 +3,6 @@ package com.studiomasteguh.nontonkuy.onboarding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.studiomasteguh.nontonkuy.HomeActivity
 import com.studiomasteguh.nontonkuy.R
 import com.studiomasteguh.nontonkuy.signin.signin.SignInActivity
 import com.studiomasteguh.nontonkuy.utils.Preferences

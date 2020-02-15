@@ -3,6 +3,8 @@ package com.studiomasteguh.nontonkuy.utils
 import android.content.Context
 import android.content.SharedPreferences
 
+// berfungsi untuk penyimpanan sementara dalam database
+
 class Preferences(val context: Context) {
     companion object {
         const val MEETING_PREF = "USER_PREF"
@@ -17,7 +19,8 @@ class Preferences(val context: Context) {
     }
 
     fun getValues(key: String): String? {
-        return sharedPref.getString(key, null)
+        return sharedPref.getString(key, "")
     }
+
 
 }
