@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
-import com.studiomasteguh.nontonkuy.DetailActivity
 
 import com.studiomasteguh.nontonkuy.R
 import com.studiomasteguh.nontonkuy.home.model.Film
