@@ -19,8 +19,10 @@ Movie Application With Kotlin and Firebase
 2. Maze Design
 3. Android Studio
 4. Invision App
+5. Whimsical
 
-    
+# Showcase Application    
+
 ![Home Screen](https://user-images.githubusercontent.com/47202729/75348675-e1ee7180-58d5-11ea-998d-49cac7d26e3c.png)
 ![Pilih Bangku Screen](https://user-images.githubusercontent.com/47202729/75355425-0e5bbb00-58e1-11ea-97c2-50b4e12c46af.png)
 ![Movie Detail Purchase](https://user-images.githubusercontent.com/47202729/75355451-1a477d00-58e1-11ea-8ffd-06c3a1d6056e.png)
