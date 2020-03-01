@@ -47,13 +47,12 @@ class NowPlayingAdapter(private var data: List<Film>,
 
             Glide.with(context)
                     .load(data.poster)
-                    .into(tvImage);
+                    .into(tvImage)
 
             itemView.setOnClickListener {
                 listener(data)
             }
         }
-
     }
 
 }

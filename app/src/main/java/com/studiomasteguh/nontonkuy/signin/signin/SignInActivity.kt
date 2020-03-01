@@ -69,7 +69,7 @@ class SignInActivity : AppCompatActivity() {
                     Toast.makeText(this@SignInActivity, "User tidak ditemukan", Toast.LENGTH_SHORT).show()
                 } else {
                     if (user.password.equals(Password)){
-                        Toast.makeText(this@SignInActivity, "Selamat Datang", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@SignInActivity, "Selamat Datang " +user.nama, Toast.LENGTH_SHORT).show()
                         preferences.setValues("nama", user.nama.toString())
                         preferences.setValues("user", user.username.toString())
                         preferences.setValues("url", user.url.toString())

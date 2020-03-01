@@ -16,7 +16,7 @@ class PlaysAdapter(private var data: List<Plays>,
                    private val listener: (Plays) -> Unit)
     : RecyclerView.Adapter<PlaysAdapter.LeagueViewHolder>() {
 
-    lateinit var ContextAdapter : Context
+    private lateinit var ContextAdapter : Context
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LeagueViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -30,6 +30,7 @@ class PlaysAdapter(private var data: List<Plays>,
         holder.bindItem(data[position], listener, ContextAdapter, position)
     }
 
+
     override fun getItemCount(): Int = data.size
 
     class LeagueViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -38,7 +39,7 @@ class PlaysAdapter(private var data: List<Plays>,
 
         private val tvImage: ImageView = view.findViewById(R.id.iv_poster_image)
 
-        fun bindItem(data: Plays, listener: (Plays) -> Unit, context : Context, position : Int) {
+        fun bindItem(data: Plays, listener: (Plays) -> Unit, context : Context, position: Int) {
 
             tvTitle.text = data.nama
 

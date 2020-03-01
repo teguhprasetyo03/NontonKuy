@@ -11,4 +11,9 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorWhiteGrey">#D3D3D3</color>
     <color name="green">#1ABC9C</color>
+    <color name="background">#dddddd</color>
+
+    <color name="colorBlueGrey">#292A50</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreen">#1ABC9C</color>
 </resources>

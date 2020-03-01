@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
+import com.studiomasteguh.nontonkuy.DetailMovieActivity
 
 import com.studiomasteguh.nontonkuy.R
 import com.studiomasteguh.nontonkuy.home.model.Film
@@ -50,10 +51,10 @@ class DashBoardFragment : Fragment() {
             currecy(preferences.getValues("saldo")!!.toDouble(), tv_saldo)
         }
 
-        Glide.with(this)
+        val into = Glide.with(this)
                 .load(preferences.getValues("url"))
                 .apply(RequestOptions.circleCropTransform())
-                .into(iv_profile)
+                .into(img_profile)
 
         rv_nowplaying.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         rv_comingsoon.layoutManager = LinearLayoutManager(context!!.applicationContext)
@@ -72,15 +73,16 @@ class DashBoardFragment : Fragment() {
                     dataList.add(film!!)
                 }
 
+
                 rv_nowplaying.adapter = NowPlayingAdapter(dataList) {
                     val intent = Intent(context,
-                            DetailActivity::class.java).putExtra("data", it)
+                            DetailMovieActivity::class.java).putExtra("data", it)
                     startActivity(intent)
                 }
 
                 rv_comingsoon.adapter = ComingSoonAdapter(dataList) {
                     val intent = Intent(context,
-                            DetailActivity::class.java).putExtra("data", it)
+                            DetailMovieActivity::class.java).putExtra("data", it)
                     startActivity(intent)
                 }
 

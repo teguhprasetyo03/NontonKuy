@@ -24,13 +24,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".home.tiket.TiketActivity"></activity>
         <activity android:name=".HistoryActivity" />
         <activity android:name=".MyWalletActivity" />
         <activity android:name=".EditProfileActivity" />
-        <activity android:name=".CheckoutFailedActivity" />
-        <activity android:name=".CheckoutActivity" />
-        <activity android:name=".PilihBangkuActivity" />
+        <activity android:name=".checkout.CheckoutSuccessActivity" />
+        <activity android:name=".checkout.CheckoutActivity" />
+        <activity android:name=".checkout.PilihBangkuActivity" />
         <activity android:name=".DetailMovieActivity" />
         <activity android:name=".home.HomeActivity" />
         <activity android:name=".signin.signup.SignUpActivity" />

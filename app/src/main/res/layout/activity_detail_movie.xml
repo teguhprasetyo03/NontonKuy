@@ -95,7 +95,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_who_played"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,7 +104,7 @@
 
     <Button
         android:textSize="16sp"
-        android:id="@+id/btn_pilih_bangku"
+        android:id="@+id/btn_daftar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

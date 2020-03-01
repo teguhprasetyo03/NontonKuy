@@ -6,7 +6,11 @@ import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.studiomasteguh.nontonkuy.R
 import com.studiomasteguh.nontonkuy.home.dashboard.DashBoardFragment
+import com.studiomasteguh.nontonkuy.home.setting.SettingFragment
 import kotlinx.android.synthetic.main.activity_home.*
+
+import com.studiomasteguh.nontonkuy.home.tiket.TiketFragment
+
 
 class HomeActivity : AppCompatActivity() {
 

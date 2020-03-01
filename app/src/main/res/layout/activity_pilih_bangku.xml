@@ -1,67 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
-    tools:context=".PilihBangkuActivity">
+    >
 
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_arrow_back_white_24dp" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_primary"
+        android:fontFamily="@font/montserrat"
+        android:text="Beli Tiket"
+        android:textColor="@color/colorWhite"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:text="Pilih Bangku"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/colorWhite"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView16"
+    <ImageView
+        android:id="@+id/img_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:gravity="center"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_white_24dp" />
+
+    <TextView
+        android:id="@+id/tv_kursi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
         android:text="Habibie Dan Ainun 3"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="match_parent"
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kursi"
         app:srcCompat="@drawable/layar_bioskop" />
 
     <TextView
@@ -69,311 +77,267 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="16dp"
-        android:gravity="center"
-        android:text="LAYAR BIOSKOP"
-        android:textColor="#FFFFFF"
-        android:textSize="11sp"
+        android:fontFamily="@font/montserrat"
+        android:text="Layar Bioskop"
+        android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
-
-
-<!--    Kursi Bagian A-->
+        app:layout_constraintTop_toBottomOf="@+id/tv_kursi" />
 
     <LinearLayout
-        android:id="@+id/linearLayoutA"
-        android:layout_width="409dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:orientation="horizontal"
+        android:id="@+id/ll_line"
         android:padding="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_rectangle_booked"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"/>
 
         <ImageView
-            android:layout_marginStart="20dp"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:src="@drawable/ic_rectangle_booked"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="2.5"
             android:gravity="center"
             android:text="A"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <ImageView
+            android:id="@+id/a3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="20dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_empty" />
 
         <ImageView
+            android:id="@+id/a4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_empty" />
 
     </LinearLayout>
-<!--AKhir kursi Bagian A-->
 
-
-<!--    Kursi Bagian B-->
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="409dp"
+        android:id="@+id/ll_line2"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutA">
+        app:layout_constraintTop_toBottomOf="@+id/ll_line">
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="2.5"
             android:gravity="center"
             android:text="B"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="20dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_booked" />
 
     </LinearLayout>
 
-<!--    Akhir Kursi Bagian B-->
-
-
-
-<!--    Kursi Bagian C-->
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="409dp"
+        android:id="@+id/ll_line3"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/ll_line2">
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="2.5"
             android:gravity="center"
             android:text="C"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="20dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_booked" />
 
     </LinearLayout>
 
-<!--    Kursi Bagian C-->
-
-
-
     <LinearLayout
-        android:layout_width="409dp"
+        android:id="@+id/ll_line4"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
-            android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+        app:layout_constraintTop_toBottomOf="@+id/ll_line3">
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_booked" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_rectangle_booked" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="2.5"
             android:gravity="center"
             android:text="D"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="20dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            android:src="@drawable/btn_sheet_kursi" />
+            android:src="@drawable/ic_rectangle_booked" />
+
     </LinearLayout>
 
-
-    <Button
-        android:id="@+id/btn_pilih_bangku"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/btn_primary"
-        android:text="BELI TIKET"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
     <TextView
-        android:gravity="center_vertical"
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
-        android:drawableLeft="@drawable/ic_rectangle"
+        android:drawableLeft="@drawable/ic_rectangle_booked"
         android:drawablePadding="10dp"
-        android:text="Empty"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/btn_daftar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Booked"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_home"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="24dp"
-        android:drawableLeft="@drawable/ic_booked"
+        android:drawableLeft="@drawable/ic_rectangle_empty"
         android:drawablePadding="10dp"
-        android:gravity="center_vertical"
-        android:text="Booked"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/btn_daftar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
-        app:layout_constraintStart_toEndOf="@+id/textView18"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.454" />
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Empty"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_home"
+        app:layout_constraintStart_toEndOf="@+id/textView18" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="24dp"
+        android:drawableLeft="@drawable/ic_rectangle_selected"
         android:drawablePadding="10dp"
-        android:drawableLeft="@drawable/ic_selected"
-        android:gravity="center_vertical"
-        android:textColor="#FFFFFF"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
         android:text="Selected"
-        app:layout_constraintBottom_toTopOf="@+id/btn_daftar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_home"
+        app:layout_constraintStart_toEndOf="@+id/textView19" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>

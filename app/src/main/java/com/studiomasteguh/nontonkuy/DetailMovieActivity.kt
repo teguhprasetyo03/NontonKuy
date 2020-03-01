@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.google.firebase.database.*
+import com.studiomasteguh.nontonkuy.checkout.PilihBangkuActivity
 import com.studiomasteguh.nontonkuy.home.dashboard.PlaysAdapter
 import com.studiomasteguh.nontonkuy.home.model.Film
 import com.studiomasteguh.nontonkuy.home.model.Plays
@@ -30,12 +31,12 @@ class DetailMovieActivity : AppCompatActivity() {
 
         tv_name_poster.text = data.judul
         tv_genre.text = data.genre
-        tv_poster_desc.text = data.judul
+        tv_poster_desc.text = data.desc
         tv_rate.text = data.rating
 
         Glide.with(this).load(data.poster).into(img_poster)
 
-        btn_pilih_bangku.setOnClickListener {
+        btn_daftar.setOnClickListener {
             val intent = Intent(this, PilihBangkuActivity::class.java).putExtra("data" , data)
             startActivity(intent)
         }
@@ -65,6 +66,7 @@ class DetailMovieActivity : AppCompatActivity() {
                 }
 
             }
+
 
             override fun onCancelled(error: DatabaseError) {
                 Toast.makeText(this@DetailMovieActivity, ""+error.message, Toast.LENGTH_LONG).show()

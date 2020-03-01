@@ -62,8 +62,8 @@ class SignUpActivity : AppCompatActivity() {
 
         val user = User()
         user.email = signEmail
-        user.nama = signNama
         user.username = signUsername
+        user.nama = signNama
         user.password = signPassword
 
         if (signUsername != null){
@@ -81,7 +81,7 @@ class SignUpActivity : AppCompatActivity() {
 
                     preferences.setValues("nama", data.nama.toString())
                     preferences.setValues("user", data.username.toString())
-                    preferences.setValues("url", data.url.toString())
+                    preferences.setValues("url", "")
                     preferences.setValues("email", data.email.toString())
                     preferences.setValues("status", "1")
 
