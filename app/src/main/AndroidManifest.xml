@@ -26,7 +26,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".home.tiket.TiketActivity"></activity>
         <activity android:name=".HistoryActivity" />
-        <activity android:name=".MyWalletActivity" />
+        <activity android:name=".wallet.MyWalletActivity" />
         <activity android:name=".EditProfileActivity" />
         <activity android:name=".checkout.CheckoutSuccessActivity" />
         <activity android:name=".checkout.CheckoutActivity" />

@@ -1,16 +1,17 @@
 package com.studiomasteguh.nontonkuy.home.setting
 
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-
 import com.studiomasteguh.nontonkuy.R
 import com.studiomasteguh.nontonkuy.utils.Preferences
+import com.studiomasteguh.nontonkuy.wallet.MyWalletActivity
 import kotlinx.android.synthetic.main.fragment_setting.*
 
 /**
@@ -38,6 +39,10 @@ class SettingFragment : Fragment() {
                 .load(preferences.getValues("url"))
                 .apply(RequestOptions.circleCropTransform())
                 .into(img_profile)
+
+        tv_my_wallet.setOnClickListener {
+            startActivity(Intent(activity, MyWalletActivity::class.java))
+        }
     }
 
 }
